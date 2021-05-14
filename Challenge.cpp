@@ -57,7 +57,7 @@ namespace Challenge
 		std::cout << "Room cost estimate:" << TotalEstimate << std::endl;
 		std::cout << "Taxes:" << Tax << std::endl;
 	}
-	void thirdChallege()
+	void thirdChallenge()
 	{
 		std::vector<int> vector1;
 		std::vector<int> vector2;
@@ -90,6 +90,92 @@ namespace Challenge
 		std::cout << "First value is " << vector1.at(0) << std::endl;
 		std::cout << "Second value is " << vector1.at(1) << std::endl;
 	}
+	void forthCHallenge()
+	{
+
+		// Solution 1
+
+	/*	int cent = 0;
+		int dollar = 100;
+		int quarter = 25;
+		int dime = 10;
+		int nickel = 5;
+		int penny = 1;
+		int change=0;
+		std::cout << "Enter amount" << std::endl;
+		std::cin >> cent;
+		if(cent==0)
+		{
+			int dollar = 0;
+			int quarter = 0;
+			int dime = 0;
+			int nickel = 0;
+			int penny = 0;
+		}*/
+
+		//int dollarsInCents = cent/dollar;
+		//change = cent % dollar;
+		//int quarterInCents = change / quarter;
+		//change = change % quarter;
+		//int dimeInCents = change / dime;
+		//change = change % dime;
+		//int nickelInCents = change / nickel;
+		//change = change % nickel;
+		//int pennyInCents = change / penny;
+
+		//std::cout << "In the US:" << std::endl;
+		//std::cout << "Dollars: " << dollarsInCents << std::endl;
+		//std::cout << "Quareter: " << quarterInCents << std::endl;
+		//std::cout << "Dime: " << dimeInCents << std::endl;
+		//std::cout << "Nickel: " << nickelInCents << std::endl;
+		//std::cout << "Penny: " << pennyInCents << std::endl;
+///////////////////////////////////////////////////////////////
+
+		//Solution 2
+		
+		int balance=0;
+		int cent = 0;
+		const int dollarValue = 100;
+		const int quarterValue = 25;
+		const int dimeValue = 10;
+		const int nickelValue = 5;
+		const int pennyValue = 1;
+
+		
+			int dollar = 0;
+			int quarter = 0;
+			int dime = 0;
+			int nickel = 0;
+			int penny = 0;
+			int change = 0;
+		
+		std::cout << "Enter amount" << std::endl;
+		std::cin >> cent;
+	
+		dollar= cent / dollarValue;
+		balance = cent-(dollar * dollarValue);
+
+		quarter = balance / quarterValue;
+		balance -= quarter * quarterValue;
+
+		dime = balance / dimeValue;
+		balance -= dime * dimeValue;
+
+		nickel = balance / nickelValue;
+		balance -= nickel * nickelValue;
+	
+		penny = balance / pennyValue;
+		balance -= penny * pennyValue;
+
+		//balance = penny;
+
+		std::cout << "In the US:" << std::endl;
+	std::cout << "Dollars: " << dollar << std::endl;
+	std::cout << "Quareter: " << quarter << std::endl;
+	std::cout << "Dime: " << dime<< std::endl;
+	std::cout << "Nickel: " << nickel << std::endl;
+	std::cout << "Penny: " << penny << std::endl;
+	}
 }
 
 namespace MiniChallenge
@@ -120,5 +206,18 @@ namespace MiniChallenge
 		std::cout << "Room cost: " << Total << std::endl;
 		std::cout << "Room cost estimate:" << TotalEstimate << std::endl;
 		std::cout << "Taxes:" << Tax << std::endl;
+	}
+	void canyouDrive()
+	{
+		int age = 0;
+		std::cout << "How old are you?" << std::endl;
+		std::cin >> age;
+		if(age>=16)
+		{
+			std::cout << "Yes you can drive!" << std::endl;
+		}else
+		{
+			std::cout << "No you cant drive! You are not old enough" << std::endl;
+		}
 	}
 }

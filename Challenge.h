@@ -6,10 +6,12 @@ namespace Challenge
 {
 	void firstChallenge();
 	void secondChallenge();
-	void thirdChallege();
+	void thirdChallenge();
+	void forthCHallenge();
 }
 
 namespace MiniChallenge
 {
 	void hotelService();
+	void canyouDrive();
 }

@@ -132,8 +132,8 @@ namespace Challenge
 ///////////////////////////////////////////////////////////////
 
 		//Solution 2
-		
-		int balance=0;
+
+		int balance = 0;
 		int cent = 0;
 		const int dollarValue = 100;
 		const int quarterValue = 25;
@@ -141,19 +141,19 @@ namespace Challenge
 		const int nickelValue = 5;
 		const int pennyValue = 1;
 
-		
-			int dollar = 0;
-			int quarter = 0;
-			int dime = 0;
-			int nickel = 0;
-			int penny = 0;
-			int change = 0;
-		
+
+		int dollar = 0;
+		int quarter = 0;
+		int dime = 0;
+		int nickel = 0;
+		int penny = 0;
+		int change = 0;
+
 		std::cout << "Enter amount" << std::endl;
 		std::cin >> cent;
-	
-		dollar= cent / dollarValue;
-		balance = cent-(dollar * dollarValue);
+
+		dollar = cent / dollarValue;
+		balance = cent - (dollar * dollarValue);
 
 		quarter = balance / quarterValue;
 		balance -= quarter * quarterValue;
@@ -163,18 +163,112 @@ namespace Challenge
 
 		nickel = balance / nickelValue;
 		balance -= nickel * nickelValue;
-	
+
 		penny = balance / pennyValue;
 		balance -= penny * pennyValue;
 
 		//balance = penny;
 
 		std::cout << "In the US:" << std::endl;
-	std::cout << "Dollars: " << dollar << std::endl;
-	std::cout << "Quareter: " << quarter << std::endl;
-	std::cout << "Dime: " << dime<< std::endl;
-	std::cout << "Nickel: " << nickel << std::endl;
-	std::cout << "Penny: " << penny << std::endl;
+		std::cout << "Dollars: " << dollar << std::endl;
+		std::cout << "Quareter: " << quarter << std::endl;
+		std::cout << "Dime: " << dime << std::endl;
+		std::cout << "Nickel: " << nickel << std::endl;
+		std::cout << "Penny: " << penny << std::endl;
+	}
+	void fifthChallenge()
+	{
+		char print;
+		int number;
+		bool empty = false;
+		std::vector<int>numList{};
+		std::cout << "Press: " << std::endl;
+
+		std::cout << "P - Print numbers " << "A - Add a number " << "M - Display mean of the numbers " << std::endl;
+		std::cout << "M - Display mean of the numbers " << "S - Display the smallest numbers " << "L - Display the largest numbers " << std::endl;
+		std::cout << "Q - Quit" << std::endl;
+		do{
+			std::cin >> print;
+			if (print == 'P' || print == 'p')
+			{
+				empty = (numList.size() == 0) ? true : false;
+				if (empty)
+				{
+					std::cout << "[] - The list is empty" << std::endl;
+				}
+				else {
+					for (auto num : numList)
+					{
+						std::cout << num << " ";
+					}
+				}
+			
+			}
+			if(print == 'M' || print =='m')
+			{
+				int total=0;
+				empty = (numList.size() == 0) ? true : false;
+				if (empty)
+				{
+					std::cout << "[] - The list is empty" << std::endl;
+				}
+				else {
+					for (auto num : numList)
+					{
+						total += num;
+						std::cout << "The mean is" << static_cast<double>(total) / numList.size() << std::endl;
+					}
+				}
+			
+			}
+			if (print == 'A' || print == 'a')
+			{
+					std::cout << "Please, what number would you like to add: " << std::endl;
+					std::cin >> number;
+					numList.push_back(number);
+					std::cout << number << " number is added" << std::endl;
+
+					std::cout << "[";
+					for (auto num : numList)
+					{
+						std::cout << num << " ";
+					}
+					std::cout << "]";
+					std::cout << std::endl;
+				
+			
+			}
+			if (print == 'S' || print == 's')
+			{
+			
+				empty = (numList.size() == 0) ? true : false;
+				if (empty)
+				{
+					std::cout << "[] - The list is empty! There are no values to check" << std::endl;
+				}else
+				{
+					std::cout << "Lowest number in the list is " << *std::min_element(numList.begin(), numList.end()) << std::endl;
+				}
+			}
+
+			if (print == 'L' || print == 'l')
+			{
+				empty = (numList.size() == 0) ? true : false;
+				if (empty)
+				{
+					std::cout << "[] - The list is empty" << std::endl;
+				}
+				else {
+					std::cout << "Highest number in the list is " << *std::max_element(numList.begin(), numList.end()) << std::endl;
+				
+				}
+			}
+			if(print == 'Q' || print == 'q')
+			{
+				std::cout << "Application Closed!"<<std::endl;
+				return;
+			}
+		} while (print != 'Q' && print != 'q');
 	}
 }
 

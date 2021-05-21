@@ -6,10 +6,8 @@ int main()
 	//Challenge::secondChallenge();
 	//Challenge::thirdChallenge();
 	//Challenge::forthCHallenge();
-
+	Challenge::fifthChallenge();
 
 	//MiniChallenge::hotelService();
 	//MiniChallenge::canyouDrive();
-	return 0;
 }
-

@@ -270,6 +270,58 @@ namespace Challenge
 			}
 		} while (print != 'Q' && print != 'q');
 	}
+	void sixthChallenge()
+	{
+		std::string abc = { "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" };
+		std::string key = { "XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr" };
+		std::string message;
+		char input = {};
+		std::string encrypted;
+		std::string decrypted;
+		std::cout << "Please enter secret message" << std::endl;
+
+
+		std::getline(std::cin, message);
+
+
+		for (char c : message)
+		{
+			if (abc.find(c) != std::string::npos)
+			{
+				encrypted += key[(abc.find(c))];
+			}
+
+			else
+			{
+				encrypted += c;
+			}
+		}
+		std::cout << "Your encrypted message is: " << encrypted << std::endl;
+
+		std::cout << " Would you like you decrypt this message ? " << std::endl;
+		std::cin >> input;
+		if (input == 'Y')
+		{
+			for (char c : encrypted)
+			{
+				if (key.find(c) != std::string::npos)
+				{
+					decrypted += abc[(key.find(c))];
+				}
+
+				else
+				{
+					decrypted += c;
+				}
+			}
+			std::cout << "Your encrypted message is: " << decrypted << std::endl;
+		}
+		else if (input == 'N')
+		{
+			std::cout << " Program closed!" << std::endl;
+			return;
+		}
+	}
 }
 
 namespace MiniChallenge

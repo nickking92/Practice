@@ -26,5 +26,8 @@
     <ClInclude Include="Challenge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Practice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

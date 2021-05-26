@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <string>
 namespace Challenge
 {
 	void firstChallenge();
@@ -9,6 +10,7 @@ namespace Challenge
 	void thirdChallenge();
 	void forthCHallenge();
 	void fifthChallenge();
+	void sixthChallenge();
 }
 
 namespace MiniChallenge

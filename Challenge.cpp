@@ -288,7 +288,9 @@ namespace Challenge
 		{
 			if (abc.find(c) != std::string::npos)
 			{
-				encrypted += key[(abc.find(c))];
+				size_t position = abc.find(c);
+				char newCharacter = key[(position)];
+				encrypted += newCharacter;
 			}
 
 			else
@@ -306,7 +308,9 @@ namespace Challenge
 			{
 				if (key.find(c) != std::string::npos)
 				{
-					decrypted += abc[(key.find(c))];
+					size_t pos = abc.find(c);
+					char newChar = abc[(pos)];
+					decrypted += newChar;
 				}
 
 				else
@@ -314,11 +318,11 @@ namespace Challenge
 					decrypted += c;
 				}
 			}
-			std::cout << "Your encrypted message is: " << decrypted << std::endl;
+			std::cout << "Your decrypted message is: " << decrypted << std::endl;
 		}
 		else if (input == 'N')
 		{
-			std::cout << " Program closed!" << std::endl;
+			std::cout << "Program closed!" << std::endl;
 			return;
 		}
 	}

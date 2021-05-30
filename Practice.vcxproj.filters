@@ -21,12 +21,18 @@
     <ClCompile Include="Challenge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Challenge7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Practice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenge7.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

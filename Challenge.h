@@ -11,6 +11,7 @@ namespace Challenge
 	void forthCHallenge();
 	void fifthChallenge();
 	void sixthChallenge();
+	void seventhChallenge();
 }
 
 namespace MiniChallenge

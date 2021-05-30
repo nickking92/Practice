@@ -1,6 +1,9 @@
 #include "Challenge.h"
 #include <string>
 #include "Practice.h"
+#include <cmath>
+
+
 int main()
 {
 	//Challenge::firstChallenge();
@@ -8,17 +11,10 @@ int main()
 	//Challenge::thirdChallenge();
 	//Challenge::forthCHallenge();
 	//Challenge::fifthChallenge();
-	Challenge::sixthChallenge();
+	//Challenge::sixthChallenge();
+	Challenge::seventhChallenge();
 	//MiniChallenge::hotelService();
 	//MiniChallenge::canyouDrive();
 
-	
-	
-
-	return 0;
 }
-
-
-
-
 

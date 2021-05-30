@@ -1,9 +1,9 @@
 #include "Challenge.h"
-
+#include "Challenge7.h"
 namespace Challenge
 {
-
-
+	Challenge7 ch7;
+	
 	void firstChallenge()
 	{
 		int favNumber;
@@ -325,6 +325,20 @@ namespace Challenge
 			std::cout << "Program closed!" << std::endl;
 			return;
 		}
+	}
+	void seventhChallenge()
+	{
+		
+		std::cout << "Press: " << std::endl;
+		std::cout << "P - Print numbers " << "A - Add a number " << "M - Display mean of the numbers " << std::endl;
+		std::cout << "M - Display mean of the numbers " << "S - Display the smallest numbers " << "L - Display the largest numbers " << std::endl;
+		std::cout << "Q - Quit" << std::endl;
+		do {
+			std::cin >> ch7.print;
+			ch7.checkSelection();
+			
+	
+		} while (ch7.print != 'Q' && ch7.print != 'q');
 	}
 }
 

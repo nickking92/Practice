@@ -3,7 +3,6 @@
 #include "Practice.h"
 #include <cmath>
 
-
 int main()
 {
 	//Challenge::firstChallenge();
@@ -12,9 +11,19 @@ int main()
 	//Challenge::forthCHallenge();
 	//Challenge::fifthChallenge();
 	//Challenge::sixthChallenge();
-	Challenge::seventhChallenge();
+	//Challenge::seventhChallenge();
+	//Challenge::eightChallenge();
 	//MiniChallenge::hotelService();
 	//MiniChallenge::canyouDrive();
 
+
+
 }
+
+
+
+
+
+
+
 

@@ -1,9 +1,10 @@
 #include "Challenge.h"
 #include "Challenge7.h"
+#include "Challenge8.h"
 namespace Challenge
 {
 	Challenge7 ch7;
-	
+	Challenge8 ch8;
 	void firstChallenge()
 	{
 		int favNumber;
@@ -339,6 +340,17 @@ namespace Challenge
 			
 	
 		} while (ch7.print != 'Q' && ch7.print != 'q');
+	}
+	void eightChallenge()
+	{
+		std::cout << "Array 1" << std::endl;
+		ch8.print(ch8.arrayOne,ch8.arraySize1);
+		std::cout << "Array 2" << std::endl;
+		ch8.print(ch8.arrayTwo,ch8.arraySize2);
+		int* result=ch8.apply_ALL(ch8.arrayOne, ch8.arraySize1,ch8.arrayTwo, ch8.arraySize2);
+		size_t result_size = ch8.arraySize1 * ch8.arraySize2;
+		ch8.print(result, result_size);
+		delete [] result;
 	}
 }
 

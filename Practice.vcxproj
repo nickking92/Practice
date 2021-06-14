@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,16 +140,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Account.cpp" />
     <ClCompile Include="Challenge.cpp" />
     <ClCompile Include="Challenge7.cpp" />
     <ClCompile Include="Challenge8.cpp" />
+    <ClCompile Include="Deep.cpp" />
     <ClCompile Include="Practice.cpp" />
+    <ClCompile Include="Shallow.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Account.h" />
     <ClInclude Include="Challenge.h" />
     <ClInclude Include="Challenge7.h" />
     <ClInclude Include="Challenge8.h" />
+    <ClInclude Include="Deep.h" />
     <ClInclude Include="Practice.h" />
+    <ClInclude Include="Shallow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

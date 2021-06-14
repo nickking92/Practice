@@ -98,7 +98,7 @@ void Challenge7::findNumber(std::vector<int>& numList)
 	int target;
 	std::cin >> target;
 
-	for(int i=0;i<numList.size();i++)
+	for(unsigned int i=0;i<numList.size();i++)
 	if(target==numList.at(i))
 	{
 		std::cout<<target<<" exist in a list"<<std::endl;

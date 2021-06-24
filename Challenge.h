@@ -13,6 +13,7 @@ namespace Challenge
 	void sixthChallenge();
 	void seventhChallenge();
 	void eightChallenge();
+	void nineChallenge();
 }
 
 namespace MiniChallenge

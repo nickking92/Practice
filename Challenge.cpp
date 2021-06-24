@@ -1,6 +1,7 @@
 #include "Challenge.h"
 #include "Challenge7.h"
 #include "Challenge8.h"
+#include "Movies.h"
 namespace Challenge
 {
 	Challenge7 ch7;
@@ -351,6 +352,29 @@ namespace Challenge
 		size_t result_size = ch8.arraySize1 * ch8.arraySize2;
 		ch8.print(result, result_size);
 		delete [] result;
+	}
+	void nineChallenge()
+	{
+		
+		std::vector<Movie>movie;
+		Movies* m=new Movies(Movies(movie));
+
+		m->addMovie("Spider-man",9,1);
+		m->addMovie("Spider-man 3", 9, 1);
+		m->addMovie("Spider-man 2", 9, 1);
+
+		m->displayMovies();
+		std::string movieCheck;
+		std::cout << "Check if movie is available" << std::endl;
+		std::cin >> movieCheck;
+		if(m->incrementWatched(movieCheck))
+		{
+			std::cout << movieCheck << " Movie found" << std::endl;
+		}else
+		{
+			std::cout << movieCheck << " Movie not found" << std::endl;
+		}
+		
 	}
 }
 

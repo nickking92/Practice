@@ -4,7 +4,9 @@
 class Account
 
 {
+	friend void display_Acc(Account& a);
 public:
+
 	std::string name;
 	int age = 0;
 	int amount = 0;
@@ -23,5 +25,6 @@ public:
 	inline long checkBalance() { return balance; };
 
 private:
+
 	long balance = 1000;
 };

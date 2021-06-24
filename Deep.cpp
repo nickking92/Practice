@@ -9,6 +9,7 @@ Deep::Deep(int d)
 
 Deep::Deep(const Deep& copy) :Deep{ *copy.data }
 {
+	
 	std::cout << "Deep copy" << std::endl;
 }
 
@@ -22,6 +23,7 @@ int Deep::getData()
 {
 	return *data;
 }
+
 
 
 

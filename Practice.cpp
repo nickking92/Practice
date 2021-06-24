@@ -5,7 +5,11 @@
 #include "Account.h"
 #include "Shallow.h"
 #include "Deep.h"
-void showDeep(Deep d);
+#include "Move.h"
+#include "Player.h"
+
+
+
 int main()
 {
 
@@ -17,22 +21,12 @@ int main()
 	//Challenge::sixthChallenge();
 	//Challenge::seventhChallenge();
 	//Challenge::eightChallenge();
+	//Challenge::nineChallenge();
 	//MiniChallenge::hotelService();
 	//MiniChallenge::canyouDrive();
-	Deep d(10);
-	showDeep(d);
-	Deep copy(d);
-	copy.setData(100);
-	showDeep(copy);
+
 
 }
-
-void showDeep(Deep d)
-{
-	std::cout << "Data value is " << d.getData() << std::endl;
-}
-
-
 
 
 

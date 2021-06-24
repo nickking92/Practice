@@ -145,6 +145,10 @@
     <ClCompile Include="Challenge7.cpp" />
     <ClCompile Include="Challenge8.cpp" />
     <ClCompile Include="Deep.cpp" />
+    <ClCompile Include="Move.cpp" />
+    <ClCompile Include="Movie.cpp" />
+    <ClCompile Include="Movies.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Practice.cpp" />
     <ClCompile Include="Shallow.cpp" />
   </ItemGroup>
@@ -154,6 +158,10 @@
     <ClInclude Include="Challenge7.h" />
     <ClInclude Include="Challenge8.h" />
     <ClInclude Include="Deep.h" />
+    <ClInclude Include="Move.h" />
+    <ClInclude Include="Movie.h" />
+    <ClInclude Include="Movies.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Practice.h" />
     <ClInclude Include="Shallow.h" />
   </ItemGroup>

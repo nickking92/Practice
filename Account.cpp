@@ -110,3 +110,9 @@ void Account::chooseInput()
 			
 	}
 }
+
+
+void display_Acc(Account &a)
+{
+	a.balance=4;
+}
